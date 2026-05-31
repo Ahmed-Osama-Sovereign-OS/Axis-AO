@@ -1,10 +1,12 @@
 {
-  "name": "Ahmed Osama System",
-  "short_name": "Nexus",
+  "name": "Axis-AO System",
+  "short_name": "Axis-AO",
+  "description": "Official AI-Driven Management System by Ahmed Osama",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#0a0a0c",
+  "background_color": "#000000",
   "theme_color": "#00d4ff",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icon.png",
