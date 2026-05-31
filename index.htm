@@ -1,36 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Osama | Data Engine</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Axis-AO | System Core</title>
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#000000">
 </head>
 <body>
 
+    <!-- شاشة التحميل -->
     <div id="loader">
         <div class="spinner"></div>
-        <p>جاري تهيئة نظام Ahmed Osama...</p>
+        <p>جاري تحميل Axis-AO...</p>
     </div>
 
-    <div id="app">
+    <!-- الواجهة الرئيسية -->
+    <div class="container">
         <header>
-            <div class="brand">AHMED OSAMA <span>SYSTEM</span></div>
+            <h1>Axis-AO</h1>
+            <p>النظام الذكي | Ahmed Osama</p>
         </header>
 
-        <main>
-            <section class="hero">
-                <h1>منظومة تحليل البيانات المتقدمة</h1>
-                <p>مرحباً بك في عالمك الرقمي الخاص. سرعة، أمان، وحماية مطلقة.</p>
-                <button onclick="enterSystem()">بدء التشغيل</button>
-            </section>
-        </main>
+        <section class="hero">
+            <h2>أهلاً بك في المحور</h2>
+            <button onclick="enterSystem()">دخول النظام</button>
+        </section>
+
+        <footer id="statusOutput"></footer>
     </div>
 
     <script src="engine.js"></script>
     <script>
-        // تسجيل الـ Service Worker ليعمل التطبيق أوفلاين
+        // تفعيل الـ Service Worker ليعمل التطبيق أوفلاين
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js');
         }
